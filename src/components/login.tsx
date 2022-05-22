@@ -20,7 +20,8 @@ const Login = () => {
 
     axios({
       method: 'post',
-      url: backend_url + '/login',
+      baseURL: backend_url,
+      url: '/login',
       data: {
         user: {
           email: email,
